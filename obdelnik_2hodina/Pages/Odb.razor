@@ -16,16 +16,16 @@
 <br />
 <label>
     Obvod:
-    <input type="number" @bind-value="obdelnik.SpoctiObvod" readonly />
+    <input type="number" @bind-value="obdelnik.Obvod" readonly />
 </label>
 <label>
     Obsah:
-    <input type="number" @bind-value="obdelnik.SpoctiObsah" readonly />
+    <input type="number" @bind-value="obdelnik.Obsah" readonly />
 </label>
 
 <button @onclick="obdelnik.Vypocet">Spočti</button>
 
 @code {
-    private obdelnik_2hodina.Model.Obdelnik obdelnik = new Model.Obdelnik();
+    private Model.Obdelnik obdelnik = new Model.Obdelnik();
 
 }
