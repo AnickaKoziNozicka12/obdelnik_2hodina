@@ -2,6 +2,7 @@
 {
     public class Obdelnik //staci zadat vlatnost jakjo prop (jako Property) a stisk tab
     {
+        //pro zadani klanych cisel muzeme pouzivat uint
         public int StranaA { get; set; }
         public int StranaB { get; set; }
         
