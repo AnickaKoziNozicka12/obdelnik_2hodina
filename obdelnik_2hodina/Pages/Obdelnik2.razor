@@ -16,16 +16,18 @@
 <br />
 <label>
     Obvod:
-    <input type="number" @bind-value="obdelnik.Obvod" readonly />
+    <input type="number" value="@obdelnik.Obvod" readonly />
 </label>
 <label>
     Obsah:
-    <input type="number" @bind-value="obdelnik.Obsah" readonly />
+    <input type="number" value="@obdelnik.Obsah" readonly />
 </label>
-
+<label>
+    Úhlopříčka:
+    <input value="@obdelnik.Uhlopricka" readonly />
+</label>
 
 @code {
     private Model.Obdelnik2 obdelnik = new Model.Obdelnik2();
-
 }
 

@@ -7,6 +7,7 @@
 
         public int StranaA
         {
+            //get vrací hodnoty stranaA
             get => stranaA;
             set
             {
@@ -26,7 +27,8 @@
         }
         public int StranaB
         {
-            get => stranaB; set
+            get => stranaB;
+            set
             {
                 if (stranaB != value)
                 {
@@ -41,9 +43,10 @@
                 }
             }
         }
-
-        public int Obvod { get; set; }
-        public int Obsah { get; set; }
-        public double Uhlopricka { get; set; }
+        
+        //=> davame na jevo, ze ma pouze getter a ne setter
+        public int Obvod => 2*(StranaA + StranaB);
+        public int Obsah => StranaA * StranaB;
+        public double Uhlopricka => Math.Sqrt(StranaA * StranaA) + Math.Pow(StranaB, 2);
     }
 }
